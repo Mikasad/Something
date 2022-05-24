@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A ccqxcy, HP Inc., LIC=485FJ-UAPEX-C0WNG-V0QQP-SR474-WKXS1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Essential  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\ccqxcy\Desktop\无感算法\无感增加实际转速\MDK-ARM\B02A11-H1.uvprojx
+Project File Date:  03/31/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'B02A11-H1'
+compiling Sensorless bldc.c...
+..\BLDC\bsp_BDCMotor.h(251): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2015-2020 硬石嵌入式开发团队 *****END OF FILE****/
+..\BLDC\function.h(136): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BLDC\Sensorless bldc.h(43): warning:  #1-D: last line of file ends without a newline
+  extern s16 Sensorless_ChangePwm(u8 Mortor_NUM);
+..\BLDC\Sensorless bldc.c(60): warning:  #940-D: missing return statement at end of non-void function "Sensorless_ChangePwm" 
+  }
+..\BLDC\Sensorless bldc.c(304): warning:  #111-D: statement is unreachable
+  		   break;
+..\BLDC\Sensorless bldc.c(334): warning:  #111-D: statement is unreachable
+  		   break;
+..\BLDC\Sensorless bldc.c(365): warning:  #111-D: statement is unreachable
+  		    dir=1;
+..\BLDC\Sensorless bldc.c(396): warning:  #111-D: statement is unreachable
+  		   break;
+..\BLDC\Sensorless bldc.c(426): warning:  #111-D: statement is unreachable
+  		   break;
+..\BLDC\Sensorless bldc.c(456): warning:  #111-D: statement is unreachable
+  		   break;
+..\BLDC\Sensorless bldc.c(460): warning:  #940-D: missing return statement at end of non-void function "BEMF" 
+  }
+..\BLDC\Sensorless bldc.c(272): warning:  #177-D: variable "cnt"  was declared but never referenced
+  	int cnt;
+..\BLDC\Sensorless bldc.c: 12 warnings, 0 errors
+compiling stm32g4xx_it.c...
+..\BLDC\bsp_BDCMotor.h(251): warning:  #1-D: last line of file ends without a newline
+  /******************* (C) COPYRIGHT 2015-2020 硬石嵌入式开发团队 *****END OF FILE****/
+../Inc/pmsm_motor_parameters.h(44): warning:  #47-D: incompatible redefinition of macro "NOMINAL_CURRENT"  (declared at line 194 of "..\BLDC\bsp_BDCMotor.h")
+  #define NOMINAL_CURRENT         18559
+../Inc/drive_parameters.h(119): warning:  #47-D: incompatible redefinition of macro "IQMAX"  (declared at line 195 of "..\BLDC\bsp_BDCMotor.h")
+  #define IQMAX                          18559
+../Inc/parameters_conversion.h(283): warning:  #47-D: incompatible redefinition of macro "SPD_TIM_M1_IRQHandler"  (declared at line 273)
+  #define SPD_TIM_M1_IRQHandler TIM2_IRQHandler
+../Inc/parameters_conversion.h(287): warning:  #47-D: incompatible redefinition of macro "SPD_TIM_M2_IRQHandler"  (declared at line 278)
+  #define SPD_TIM_M2_IRQHandler TIM4_IRQHandler
+..\BLDC\function.h(136): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\PID\pid.h(21): warning:  #47-D: incompatible redefinition of macro "NOMINAL_CURRENT"  (declared at line 44 of "../Inc/pmsm_motor_parameters.h")
+  #define NOMINAL_CURRENT  8800  //PWM Max
+..\PID\pid.h(22): warning:  #47-D: incompatible redefinition of macro "IQMAX"  (declared at line 119 of "../Inc/drive_parameters.h")
+  #define IQMAX 8800
+..\PID\pid.h(28): warning:  #47-D: incompatible redefinition of macro "PID_SPEED_KP_DEFAULT"  (declared at line 103 of "../Inc/drive_parameters.h")
+  #define PID_SPEED_KP_DEFAULT      (s16)1000              //速度环Kp
+..\PID\pid.h(29): warning:  #47-D: incompatible redefinition of macro "PID_SPEED_KI_DEFAULT"  (declared at line 104 of "../Inc/drive_parameters.h")
+  #define PID_SPEED_KI_DEFAULT      (s16)5                //速度环KI
+..\PID\pid.h(30): warning:  #47-D: incompatible redefinition of macro "PID_SPEED_KD_DEFAULT"  (declared at line 105 of "../Inc/drive_parameters.h")
+  #define PID_SPEED_KD_DEFAULT      (s16)0
+..\PID\pid.h(33): warning:  #47-D: incompatible redefinition of macro "SP_KPDIV"  (declared at line 107 of "../Inc/drive_parameters.h")
+  #define SP_KPDIV ((u16)(256))
+..\PID\pid.h(34): warning:  #47-D: incompatible redefinition of macro "SP_KIDIV"  (declared at line 108 of "../Inc/drive_parameters.h")
+  #define SP_KIDIV ((u16)(1024))
+..\PID\pid.h(35): warning:  #47-D: incompatible redefinition of macro "SP_KDDIV"  (declared at line 109 of "../Inc/drive_parameters.h")
+  #define SP_KDDIV ((u16)(16))
+..\PID\pid.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\BLDC\Sensorless bldc.h(43): warning:  #1-D: last line of file ends without a newline
+  extern s16 Sensorless_ChangePwm(u8 Mortor_NUM);
+../Src/stm32g4xx_it.c(254): warning:  #223-D: function "MotorA_Default_Phase_Cheek_IT" declared implicitly
+  						MotorA_Default_Phase_Cheek_IT(); //缺相检测
+../Src/stm32g4xx_it.c(370): warning:  #223-D: function "MotorB_Default_Phase_Cheek_IT" declared implicitly
+                      MotorB_Default_Phase_Cheek_IT();
+../Src/stm32g4xx_it.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=56540 RO-data=5788 RW-data=15392 ZI-data=7488  
+FromELF: creating hex file...
+"G474dual\B02A11-H1.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.1.0.pack
+                Keil.STM32G4xx_DFP.1.1.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_B02A11-H1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32G4xx_DFP\1.1.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
